@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<server description="bmw server">
+
+    <featureManager>
+        <feature>jpa-2.2</feature>
+    </featureManager>
+
+    <httpEndpoint id="defaultHttpEndpoint" httpPort="9080"></httpEndpoint>
+
+    <dataSource id="DefaultDatasource" jndiName="jdbc/derby">
+        <jdbcDriver libraryRef = "DERBY_JDBC_LIB"></jdbcDriver>
+        <properties.derby.embedded databaseName="bmw" createDatbase="create"></properties.derby.embedded>
+    </dataSource>
+
+</server>

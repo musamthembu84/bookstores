@@ -1,0 +1,1 @@
+insert into books(bookName,author,price) values ("bmw","the great",56986);
